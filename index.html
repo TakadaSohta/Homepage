@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>初めてのホームページ</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f8ff;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4682b4;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        nav {
-            background-color: #87ceeb;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #4682b4;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>My Profile | John Doe</title>
+  <!-- Google FontsのInterを使用 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" 
+    rel="stylesheet"
+  >
+  
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-    <header>
-        <h1>私の初めてのホームページ</h1>
-        <p>HTMLとCSSで作ったシンプルなウェブサイト</p>
-    </header>
-    <nav>
-        <a href="#about">自己紹介</a>
-        <a href="#hobby">趣味</a>
-        <a href="#contact">連絡先</a>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>自己紹介</h2>
-            <p>こんにちは！私はWeb開発を学び始めた初心者です。このページはHTMLとCSSで作成しました。</p>
-        </section>
-        <section id="hobby">
-            <h2>趣味</h2>
-            <p>私の趣味は読書、映画鑑賞、そしてプログラミングを学ぶことです。</p>
-        </section>
-        <section id="contact">
-            <h2>連絡先</h2>
-            <p>Email: example@example.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 私の初めてのホームページ</p>
-    </footer>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">John Doe</a>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Hello, I'm John Doe</h1>
+      <p class="hero-subtitle">A Web Developer who loves clean, minimal design and efficient code.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a front-end developer specializing in creating beautifully simple, user-focused websites and applications. I believe in less is more, and that every pixel and line of code should serve a purpose.
+      </p>
+    </div>
+  </section>
+
+  <section id="works" class="works">
+    <div class="container">
+      <h2>My Works</h2>
+      <div class="works-grid">
+        <div class="work-item">
+          <img src="images/work1.png" alt="Work 1" />
+          <h3>Project One</h3>
+          <p>A minimalist portfolio website built with HTML, CSS, and JS.</p>
+        </div>
+        <div class="work-item">
+          <img src="images/work2.png" alt="Work 2" />
+          <h3>Project Two</h3>
+          <p>A mobile-first landing page focusing on user experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to get in touch:</p>
+      <a class="contact-link" href="mailto:john.doe@example.com">john.doe@example.com</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2024 John Doe</small>
+    </div>
+  </footer>
 </body>
 </html>

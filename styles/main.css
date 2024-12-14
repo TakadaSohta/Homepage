@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .site-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-list a:hover {
+    color: #000;
+  }
+  
+  .hero {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .about,
+  .works,
+  .contact {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .about p,
+  .contact p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .works-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .work-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .work-item img:hover {
+    transform: scale(1.02);
+  }
+  
+  .work-item h3 {
+    font-size: 1.25rem;
+    margin: 15px 0 10px;
+  }
+  
+  .work-item p {
+    color: #555;
+  }
+  
+  .contact-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    transition: color 0.2s ease;
+  }
+  
+  .contact-link:hover {
+    color: #000;
+    border-color: #000;
+  }
+  
+  .site-footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    margin-top: 60px;
+  }
